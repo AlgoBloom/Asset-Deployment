@@ -8,4 +8,5 @@ const receiver = algosdk.mnemonicToSecretKey(process.env.MNEMONIC_RECEIVER);
 const submitToNetwork = async (signedTxn) => {
     let txn = await algodClient.sendRawTransaction(signedTxn).do();
     console.log("Transaction :" + txn.txId);
+    confirmedTxn = await algosdk.waitForConfirmation(algodClient, txn.txId, 4);
 }
