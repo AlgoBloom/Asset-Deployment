@@ -21,4 +21,7 @@ const createFT = async () => {
     const assetURL = undefined;
     const manager = creator.addr;
     const reserve = undefined;
+    const clawback = creator.addr;
+    const total = 100;
+    const decimals = 0;
 };
