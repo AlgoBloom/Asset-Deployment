@@ -14,5 +14,7 @@ const submitToNetwork = async (signedTxn) => {
 };
 
 const createFT = async () => {
-
+    const from = creator.addr;
+    const defaultFrozen = false;
+    const unitName = "CM1";
 };
