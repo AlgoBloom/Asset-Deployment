@@ -17,4 +17,8 @@ const createFT = async () => {
     const from = creator.addr;
     const defaultFrozen = false;
     const unitName = "CM1";
+    const asssetName = "Community 1 Token";
+    const assetURL = undefined;
+    const manager = creator.addr;
+    const reserve = undefined;
 };
