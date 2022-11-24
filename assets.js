@@ -44,4 +44,5 @@ const createFT = async () => {
 
     const signTxn = txn.signTxn(creator.sk);
     const confirmedTxn = await submitToNetwork(signTxn);
+    return confirmedTxn("asset-index");
 };
