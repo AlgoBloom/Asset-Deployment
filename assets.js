@@ -115,11 +115,11 @@ const createCommunityLeaderNFT2 = async () => {
     return confirmedTxn("asset-index");
 };
 
-const createCommunityLeaderNFT1 = async () => {
+const createCommunityLeaderNFT3 = async () => {
     const from = creator.addr;
     const defaultFrozen = false;
-    const unitName = "CL";
-    const asssetName = "Community Leader NFT";
+    const unitName = "TR";
+    const asssetName = "Treasurer NFT";
     const assetURL = undefined;
     const manager = creator.addr;
     const reserve = undefined;
