@@ -31,5 +31,14 @@ const createFT = async () => {
         from,
         total,
         decimals,
-    })
+        assetName,
+        unitName,
+        assetURL,
+        defaultFrozen,
+        suggestedParams,
+        freeze,
+        manager,
+        clawback,
+        reserve,
+    });
 };
