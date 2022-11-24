@@ -80,3 +80,139 @@ const createCommunityLeaderNFT1 = async () => {
     const confirmedTxn = await submitToNetwork(signTxn);
     return confirmedTxn("asset-index");
 };
+
+const createCommunityLeaderNFT2 = async () => {
+    const from = creator.addr;
+    const defaultFrozen = false;
+    const unitName = "AM";
+    const asssetName = "Authentium Member NFT";
+    const assetURL = undefined;
+    const manager = creator.addr;
+    const reserve = undefined;
+    const clawback = creator.addr;
+    const total = 1;
+    const decimals = 0;
+
+    const suggestedParams = await algodClient.getTransactionParams().do();
+
+    const txn = algosdk.makeAssetCreateTxnWithSuggestedParamsFromObject({
+        from,
+        total,
+        decimals,
+        assetName,
+        unitName,
+        assetURL,
+        defaultFrozen,
+        suggestedParams,
+        freeze,
+        manager,
+        clawback,
+        reserve,
+    });
+
+    const signTxn = txn.signTxn(creator.sk);
+    const confirmedTxn = await submitToNetwork(signTxn);
+    return confirmedTxn("asset-index");
+};
+
+const createCommunityLeaderNFT1 = async () => {
+    const from = creator.addr;
+    const defaultFrozen = false;
+    const unitName = "CL";
+    const asssetName = "Community Leader NFT";
+    const assetURL = undefined;
+    const manager = creator.addr;
+    const reserve = undefined;
+    const clawback = creator.addr;
+    const total = 1;
+    const decimals = 0;
+
+    const suggestedParams = await algodClient.getTransactionParams().do();
+
+    const txn = algosdk.makeAssetCreateTxnWithSuggestedParamsFromObject({
+        from,
+        total,
+        decimals,
+        assetName,
+        unitName,
+        assetURL,
+        defaultFrozen,
+        suggestedParams,
+        freeze,
+        manager,
+        clawback,
+        reserve,
+    });
+
+    const signTxn = txn.signTxn(creator.sk);
+    const confirmedTxn = await submitToNetwork(signTxn);
+    return confirmedTxn("asset-index");
+};
+
+const createCommunityLeaderNFT1 = async () => {
+    const from = creator.addr;
+    const defaultFrozen = false;
+    const unitName = "CL";
+    const asssetName = "Community Leader NFT";
+    const assetURL = undefined;
+    const manager = creator.addr;
+    const reserve = undefined;
+    const clawback = creator.addr;
+    const total = 1;
+    const decimals = 0;
+
+    const suggestedParams = await algodClient.getTransactionParams().do();
+
+    const txn = algosdk.makeAssetCreateTxnWithSuggestedParamsFromObject({
+        from,
+        total,
+        decimals,
+        assetName,
+        unitName,
+        assetURL,
+        defaultFrozen,
+        suggestedParams,
+        freeze,
+        manager,
+        clawback,
+        reserve,
+    });
+
+    const signTxn = txn.signTxn(creator.sk);
+    const confirmedTxn = await submitToNetwork(signTxn);
+    return confirmedTxn("asset-index");
+};
+
+const createCommunityLeaderNFT1 = async () => {
+    const from = creator.addr;
+    const defaultFrozen = false;
+    const unitName = "CL";
+    const asssetName = "Community Leader NFT";
+    const assetURL = undefined;
+    const manager = creator.addr;
+    const reserve = undefined;
+    const clawback = creator.addr;
+    const total = 1;
+    const decimals = 0;
+
+    const suggestedParams = await algodClient.getTransactionParams().do();
+
+    const txn = algosdk.makeAssetCreateTxnWithSuggestedParamsFromObject({
+        from,
+        total,
+        decimals,
+        assetName,
+        unitName,
+        assetURL,
+        defaultFrozen,
+        suggestedParams,
+        freeze,
+        manager,
+        clawback,
+        reserve,
+    });
+
+    const signTxn = txn.signTxn(creator.sk);
+    const confirmedTxn = await submitToNetwork(signTxn);
+    return confirmedTxn("asset-index");
+};
