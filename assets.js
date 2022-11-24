@@ -24,4 +24,6 @@ const createFT = async () => {
     const clawback = creator.addr;
     const total = 100;
     const decimals = 0;
+
+    const suggestedParams = await algodClient.getTransactionParams().do();
 };
