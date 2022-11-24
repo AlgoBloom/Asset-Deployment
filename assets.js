@@ -26,4 +26,10 @@ const createFT = async () => {
     const decimals = 0;
 
     const suggestedParams = await algodClient.getTransactionParams().do();
+
+    const txn = algosdk.makeAssetCreateTxnWithSuggestedParamsFromObject({
+        from,
+        total,
+        decimals,
+    })
 };
