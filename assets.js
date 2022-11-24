@@ -149,11 +149,11 @@ const createCommunityLeaderNFT3 = async () => {
     return confirmedTxn("asset-index");
 };
 
-const createCommunityLeaderNFT1 = async () => {
+const createCommunityLeaderNFT4 = async () => {
     const from = creator.addr;
     const defaultFrozen = false;
-    const unitName = "CL";
-    const asssetName = "Community Leader NFT";
+    const unitName = "FE";
+    const asssetName = "Farming Expert NFT";
     const assetURL = undefined;
     const manager = creator.addr;
     const reserve = undefined;
