@@ -47,16 +47,16 @@ const createFT = async () => {
     return confirmedTxn("asset-index");
 };
 
-const createCommunityLeaderNFT = async () => {
+const createCommunityLeaderNFT1 = async () => {
     const from = creator.addr;
     const defaultFrozen = false;
-    const unitName = "CM1";
-    const asssetName = "Community 1 Token";
+    const unitName = "CL";
+    const asssetName = "Community Leader NFT";
     const assetURL = undefined;
     const manager = creator.addr;
     const reserve = undefined;
     const clawback = creator.addr;
-    const total = 100;
+    const total = 1;
     const decimals = 0;
 
     const suggestedParams = await algodClient.getTransactionParams().do();
