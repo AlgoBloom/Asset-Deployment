@@ -46,3 +46,37 @@ const createFT = async () => {
     const confirmedTxn = await submitToNetwork(signTxn);
     return confirmedTxn("asset-index");
 };
+
+const createCommunityLeaderNFT = async () => {
+    const from = creator.addr;
+    const defaultFrozen = false;
+    const unitName = "CM1";
+    const asssetName = "Community 1 Token";
+    const assetURL = undefined;
+    const manager = creator.addr;
+    const reserve = undefined;
+    const clawback = creator.addr;
+    const total = 100;
+    const decimals = 0;
+
+    const suggestedParams = await algodClient.getTransactionParams().do();
+
+    const txn = algosdk.makeAssetCreateTxnWithSuggestedParamsFromObject({
+        from,
+        total,
+        decimals,
+        assetName,
+        unitName,
+        assetURL,
+        defaultFrozen,
+        suggestedParams,
+        freeze,
+        manager,
+        clawback,
+        reserve,
+    });
+
+    const signTxn = txn.signTxn(creator.sk);
+    const confirmedTxn = await submitToNetwork(signTxn);
+    return confirmedTxn("asset-index");
+};
