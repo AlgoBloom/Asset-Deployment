@@ -41,4 +41,6 @@ const createFT = async () => {
         clawback,
         reserve,
     });
+
+    const signTxn = txn.signTxn(creator.sk);
 };
