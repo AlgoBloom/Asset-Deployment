@@ -231,5 +231,9 @@ const createBoardNFT5 = async () => {
     console.log("Creating fungible community token...");
     const assetId1 = await createBoardNFT1().catch(console.error);
     let asset1 = await getCreatedAsset(creator, assetId1);
+    // create the first NFT
+    console.log("Creating first NFT for board position...");
+    const assetId2 = await createBoardNFT2().catch(console.error);
+    let asset2 = await getCreatedAsset(creator, assetId2);
 
 })();
