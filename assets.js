@@ -1,4 +1,6 @@
 const algosdk = require("algosdk");
+const { Account } = require("algosdk/dist/types/src/client/v2/algod/models/types");
+const { default: LookupAccountByID } = require("algosdk/dist/types/src/client/v2/indexer/lookupAccountByID");
 
 const algodClient = new algosdk.Algodv2(process.env.ALGOD_TOKEN, process.env.ALGOD_SERVER, process.env.ALGOD_PORT);
 
@@ -11,6 +13,13 @@ const submitToNetwork = async (signedTxn) => {
     confirmedTxn = await algosdk.waitForConfirmation(algodClient, txn.txId, 4);
     console.log("Transaction " + txn.txId + " confirmed in round " + confirmedTxn["confirmed-round"]);
     return confirmedTxn;
+};
+
+const getCreatedAsset = async (account, assetId) => {
+    let accountInfo = await algodClient.accountInformation(account.addr).do();
+    const asset = accountInfo["created-assets"].find((asset) => {
+        return asset["index"] == assetId;
+    });
 };
 
 const createFT = async () => {
@@ -223,4 +232,5 @@ const createBoardNFT5 = async () => {
 (async () => {
     console.log("Creating fungible community token...");
     const assetId1 = await createBoardNFT1().catch(console.error);
+    let asset = await g
 })();
