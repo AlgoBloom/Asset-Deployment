@@ -226,11 +226,10 @@ const createBoardNFT5 = async () => {
     return confirmedTxn("asset-index");
 };
 
-
-
-
 (async () => {
+    // create the fungible token
     console.log("Creating fungible community token...");
     const assetId1 = await createBoardNFT1().catch(console.error);
-    let asset = await g
+    let asset1 = await getCreatedAsset(creator, assetId1);
+
 })();
