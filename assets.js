@@ -186,9 +186,9 @@ const createBoardNFT4 = async () => {
 const createBoardNFT5 = async () => {
     const from = creator.addr;
     const defaultFrozen = false;
-    const unitName = "CL";
-    const asssetName = "Community Leader NFT";
-    const assetURL = undefined;
+    const unitName = "AO";
+    const asssetName = "Admin Officer NFT";
+    const assetURL = undefined; 
     const manager = creator.addr;
     const reserve = undefined;
     const clawback = creator.addr;
@@ -216,3 +216,11 @@ const createBoardNFT5 = async () => {
     const confirmedTxn = await submitToNetwork(signTxn);
     return confirmedTxn("asset-index");
 };
+
+
+
+
+(async () => {
+
+
+})();
