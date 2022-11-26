@@ -60,7 +60,7 @@ const createBoardNFT1 = async () => {
     const from = creator.addr;
     const defaultFrozen = false;
     const unitName = "CH";
-    const asssetName = "Head of Committee";
+    const asssetName = "Committee Head";
     const assetURL = undefined;
     const manager = creator.addr;
     const reserve = undefined;
@@ -127,8 +127,8 @@ const createBoardNFT2 = async () => {
 const createBoardNFT3 = async () => {
     const from = creator.addr;
     const defaultFrozen = false;
-    const unitName = "TR";
-    const asssetName = "Treasurer NFT";
+    const unitName = "CT";
+    const asssetName = "Committee Treasurer";
     const assetURL = undefined;
     const manager = creator.addr;
     const reserve = undefined;
@@ -228,19 +228,19 @@ const createBoardNFT5 = async () => {
 
 (async () => {
     // create the fungible token
-    console.log("Creating fungible community token...");
+    console.log("Creating fungible community voting token...");
     const assetId0 = await createFT().catch(console.error);
     let asset0 = await getCreatedAsset(creator, assetId0);
     // create the first NFT
-    console.log("Creating first NFT for board position...");
+    console.log("Creating first NFT for Committee Head board position...");
     const assetId1 = await createBoardNFT1().catch(console.error);
     let asset1 = await getCreatedAsset(creator, assetId1);
     // create the second NFT
-    console.log("Creating second NFT for board position...");
+    console.log("Creating second NFT for Committee Investor Representative board position...");
     const assetId2 = await createBoardNFT2().catch(console.error);
     let asset2 = await getCreatedAsset(creator, assetId2);
     // create the third NFT
-    console.log("Creating third NFT for board position...");
+    console.log("Creating third NFT for Committee Treasurer board position...");
     const assetId3 = await createBoardNFT3().catch(console.error);
     let asset3 = await getCreatedAsset(creator, assetId3);
     // create the fourth NFT
