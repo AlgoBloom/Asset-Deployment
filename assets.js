@@ -247,4 +247,8 @@ const createBoardNFT5 = async () => {
     console.log("Creating fourth NFT for board position...");
     const assetId4 = await createBoardNFT4().catch(console.error);
     let asset4 = await getCreatedAsset(creator, assetId4);
+    // create the fifth NFT
+    console.log("Creating fifth NFT for board position...");
+    const assetId5 = await createBoardNFT5().catch(console.error);
+    let asset5 = await getCreatedAsset(creator, assetId5);
 })();
