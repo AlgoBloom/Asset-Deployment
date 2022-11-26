@@ -60,7 +60,7 @@ const createBoardNFT1 = async () => {
     const from = creator.addr;
     const defaultFrozen = false;
     const unitName = "CL";
-    const asssetName = "Community Leader NFT";
+    const asssetName = "Head of Committee";
     const assetURL = undefined;
     const manager = creator.addr;
     const reserve = undefined;
