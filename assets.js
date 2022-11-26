@@ -229,18 +229,21 @@ const createBoardNFT5 = async () => {
 (async () => {
     // create the fungible token
     console.log("Creating fungible community token...");
-    const assetId1 = await createBoardNFT1().catch(console.error);
-    let asset1 = await getCreatedAsset(creator, assetId1);
+    const assetId0 = await createFT().catch(console.error);
+    let asset0 = await getCreatedAsset(creator, assetId0);
     // create the first NFT
     console.log("Creating first NFT for board position...");
-    const assetId2 = await createBoardNFT2().catch(console.error);
-    let asset2 = await getCreatedAsset(creator, assetId2);
+    const assetId1 = await createBoardNFT1().catch(console.error);
+    let asset1 = await getCreatedAsset(creator, assetId1);
     // create the second NFT
     console.log("Creating second NFT for board position...");
-    const assetId3 = await createBoardNFT3().catch(console.error);
-    let asset3 = await getCreatedAsset(creator, assetId3);
+    const assetId2 = await createBoardNFT2().catch(console.error);
+    let asset2 = await getCreatedAsset(creator, assetId2);
     // create the third NFT
     console.log("Creating third NFT for board position...");
-    const assetId4 = await createBoardNFT4().catch(console.error);
-    let asset4 = await getCreatedAsset(creator, assetId4);
+    const assetId3 = await createBoardNFT3().catch(console.error);
+    let asset3 = await getCreatedAsset(creator, assetId3);
+    // create the fourth NFT
+    console.log("Creating fourth NFT for board position...");
+    const assetId4 = await cre
 })();
