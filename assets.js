@@ -59,7 +59,7 @@ const createFT = async () => {
 const createBoardNFT1 = async () => {
     const from = creator.addr;
     const defaultFrozen = false;
-    const unitName = "CL";
+    const unitName = "CH";
     const asssetName = "Head of Committee";
     const assetURL = undefined;
     const manager = creator.addr;
@@ -93,8 +93,8 @@ const createBoardNFT1 = async () => {
 const createBoardNFT2 = async () => {
     const from = creator.addr;
     const defaultFrozen = false;
-    const unitName = "AM";
-    const asssetName = "Authentium Member NFT";
+    const unitName = "CI";
+    const asssetName = "Committee Investor Representative";
     const assetURL = undefined;
     const manager = creator.addr;
     const reserve = undefined;
